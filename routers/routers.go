@@ -1,6 +1,7 @@
 package routers
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"mywebsiteProject/lib/ini"
 	"mywebsiteProject/controllers/project"
@@ -33,9 +34,20 @@ func Main()  {
 				}
 			}()
 			view_name := ctx.Param("view_name")
-			ctx.HTML(http.StatusOK, view_name, gin.H{
-				"title" : "Jing Ru's CV",
-			})
+			fmt.Println(view_name)
+			switch view_name {
+			case "index.html":
+				ctx.HTML(http.StatusOK, ctx.Param("view_name"), gin.H{
+					"title" : "Jing Ru's Website",
+					"nav" : "index",
+				})
+			default:
+				ctx.HTML(http.StatusOK, ctx.Param("view_name"), gin.H{
+					"title" : "Jing Ru's Website",
+					"nav" : "not index",
+				})
+			}
+
 		})
 	}
 

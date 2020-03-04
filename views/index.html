@@ -11,7 +11,31 @@ Upgrade to a different browser</a> or install Google Chrome Frame</a> to experie
 <![endif]-->
 
 	<!-- Logo, Headline, Navigation -->
-	{{ template "navigation.html"}}
+	<header id="main-header" class="container">
+		<div class="span12">
+
+			<div id="logo">
+				<a href="/views/index.html"><h1 style="color: white; margin-bottom:0px;">JingRu's  Website</h1>   </a>
+			</div>
+
+			<!-- <hgroup id="logo">
+			  <h1>Andante /</h1>
+			  <h2>Elegant Responsive HTML5 Template</h2>
+			</hgroup> -->
+
+			<div id="nav-toggle">
+				<a href="#" data-target=".expandable-nav" class="button">menu</a>
+			</div>
+
+			<nav id="main-nav" class="clearfix">
+				<ul class="dropdown">
+					<li {{if eq .nav "index"}} class="current" {{end}}><a href="/views/index.html">Home</a></li>
+					<li {{if eq .nav "not index"}} class="current" {{end}}><a href="/views/portfolio.html">side project</a></li>
+				</ul> <!-- / .dropdown -->
+			</nav> <!-- / #main-nav -->
+
+		</div> <!-- / span12 div -->
+	</header> <!-- / Logo, Headline, Navigation -->
 	<!-- About Page -->
 	{{ template "about.html"}}
 	<!-- Main Content, 2 and 3 columns layout -->
