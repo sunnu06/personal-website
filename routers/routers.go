@@ -9,7 +9,7 @@ import (
 
 //[Global var]
 var url string
-var webport int
+
 
 func Main()  {
 	r := gin.Default()
@@ -17,7 +17,7 @@ func Main()  {
 	r.Static("/public","./public")
 
 	//[ini檔配置]
-	url, webport = ini.Main()
+	url = ini.Main()
 
 	//[Router 配置]
 	r.GET("/", func(c *gin.Context) {
