@@ -46,6 +46,6 @@ func Main()  {
 	{
 		sideprojectGroup.GET(":view_name", project.Show)
 	}
-	r.Run(":8080")
+	r.Run()
 }
 
