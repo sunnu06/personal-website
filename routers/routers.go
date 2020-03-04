@@ -2,8 +2,8 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/sunnu06/personal-website/controllers/project"
-	"github.com/sunnu06/personal-website/lib/ini"
+	"mywebsiteProject/lib/ini"
+	"mywebsiteProject/controllers/project"
 	"net/http"
 )
 
