@@ -5,7 +5,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"mywebsiteProject/models"
+	"github.com/sunnu06/personal-website/models"
 	"net/http"
 )
 
