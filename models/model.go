@@ -22,7 +22,7 @@ type ProjectInfo struct {
 }
 
 func Init()  {
-	db, err := gorm.Open("mysql", "root:paul654321@(127.0.0.1:8889)/db1?charset=utf8mb4&parseTime=True&loc=Local")
+	db, err := gorm.Open("mysql", "bca636043a1203:561045eb@(us-cdbr-iron-east-04.cleardb.net)/heroku_cc0e9c5eb8441b0?charset=utf8mb4&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
