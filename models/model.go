@@ -29,9 +29,9 @@ func Init()  {
 	defer db.Close()
 
 	// Migrate the schema
-	db.AutoMigrate(&ProjectInfo{})
-	db.Delete(&ProjectInfo{})
-
+	//db.AutoMigrate(&ProjectInfo{})
+	//db.Delete(&ProjectInfo{})
+	/*
 	//mes project
 	project1 := ProjectInfo{
 		ID: 1, Name : "Manufacturing Execution System (MES)",
@@ -200,7 +200,7 @@ func Init()  {
 		Img10:  "/public/img/content/744/uiux/pxmart/app5.jpg",
 		Period: "2017.02 ~ 2017.06",
 	}
-
+	*/
 	/*
 	//Monthly Report Design
 	var project9 = ProjectInfo{
@@ -212,7 +212,7 @@ func Init()  {
 		Period: "2018.08 ~ 2018.09",
 	}
 	*/
-
+	/*
 	db.Create(&project1)
 	db.Create(&project2)
 	db.Create(&project3)
@@ -221,6 +221,7 @@ func Init()  {
 	db.Create(&project6)
 	db.Create(&project7)
 	db.Create(&project8)
+	*/
 }
 
 func Connect() *gorm.DB {
